@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Electrical Engineering, University of Washington, 2024-present
+* B.S. in Software Engineering, Yangzhou University, 2020
 
 Work experience
 ======
@@ -31,10 +30,15 @@ Work experience
   * Github University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
-  
+ 
+
+Project experience
+======
+
+
 Skills
 ======
-* Skill 1
+* Good
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
@@ -45,12 +49,6 @@ Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
 Teaching
