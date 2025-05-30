@@ -1,0 +1,10 @@
+.code {
+    border-radius: 8px;
+    padding: 4px 6px;
+    background-color: #f8f8f8;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 151, 0, 1);
+    overflow: auto;
+  }

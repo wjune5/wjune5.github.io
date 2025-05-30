@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Timeline</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://jonbarron.info/zipnerf/img/nottingham.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1296">
+    <meta property="og:image:height" content="840">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jonbarron.info/zipnerf/" />
+    <meta property="og:title" content="Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields" />
+    <meta property="og:description"
+        content="Neural Radiance Field training can be accelerated through the use of grid-based representations in NeRF's learned mapping from spatial coordinates to colors and volumetric density. However, these grid-based approaches lack an explicit understanding of scale and therefore often introduce aliasing, usually in the form of jaggies or missing scene content. Anti-aliasing has previously been addressed by mip-NeRF 360, which reasons about sub-volumes along a cone rather than points along a ray, but this approach is not natively compatible with current grid-based techniques. We show how ideas from rendering and signal processing can be used to construct a technique that combines mip-NeRF 360 and grid-based models such as Instant NGP to yield error rates that are 8%-77% lower than either prior technique, and that trains 24x faster than mip-NeRF 360." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields" />
+    <meta name="twitter:description"
+        content="Neural Radiance Field training can be accelerated through the use of grid-based representations in NeRF's learned mapping from spatial coordinates to colors and volumetric density. However, these grid-based approaches lack an explicit understanding of scale and therefore often introduce aliasing, usually in the form of jaggies or missing scene content. Anti-aliasing has previously been addressed by mip-NeRF 360, which reasons about sub-volumes along a cone rather than points along a ray, but this approach is not natively compatible with current grid-based techniques. We show how ideas from rendering and signal processing can be used to construct a technique that combines mip-NeRF 360 and grid-based models such as Instant NGP to yield error rates that are 8%-77% lower than either prior technique, and that trains 24x faster than mip-NeRF 360." />
+    <meta name="twitter:image" content="https://jonbarron.info/zipnerf/img/teaser.jpg" />
+
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/video_comparison.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Tasks in Obsidian</b></br>
+                <small>
+                    Organize and track my time blocks, with different colors representing various activity categories
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://wjune5.github.io/">
+                            Wenjun Fan
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://github.com/wjune5/obsidian-dataviewjs-examples/tree/main/timeline">
+                            <image src="../../images/github.png" height="60px">
+                                <h4><strong>JS Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <span># dataviewjs</span>
+                <span># javascript</span>
+                <span># css</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p>Easily record your timeline through shortcuts, visualize your time blocks in obsidian.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Steps for Creating the Shortcut
+                </h3>
+                <p>1. <b>Choose from List</b></p>
+                <p>Define a <span class="code">List</span>. The list items are <span class="code">start</span> and <span
+                        class="code">end</span></p>
+                <p>Action: <span class="code">Choose from List</span></p>
+                <p>2. <b>Use If to check different activity type</b></p>
+                <p>Action: <span class="code">If</span> the variable value is "start", got to step 3, otherwise step 4
+                </p>
+                <p>3. <b>Choose from Menu</b></p>
+                <p>Action: <span class="code">Choose from Menu</span></p>
+                <p>Add my first-level category of activities. Then define a <span class="code">Dictionary</span> in each
+                    options, and add specific categories. Action: <span class="code">Choose from List</span>(Variable is
+                    Dictionary)</p>
+                When it reaches the end menu, use Action: <span class="code">Ask for input</span> to get some notes from
+                users. Define a <span class="code">Dictionary</span> to store the menu results, current time, activity
+                type(result of step 1), and notes.
+                <p>4. <b>End the activity</b></p>
+                <p>Define a <span class="code">List</span> to get the comments or rating of this activity. The list
+                    items can be the comments or feelings.</p>
+                <p>Action: <span class="code">Choose from List</span></p>
+                <p>Define a <span class="code">Dictionary</span> to store current time, activity type(result of step 1),
+                    and comments.</p>
+
+                Encode to JSON
+
+                Use "Encode to JSON" to convert the dictionary into JSON.
+
+                <p>5. <b>Get backup File on GitHub</b></p>
+                <p>Action: <span class="code">Get Contents from URL</span></p>
+                See Github api doc for parameters details.
+                <p>Action: <span class="code">Get Dictionary Value</span> to get the results of Github api in Json(get
+                    <span class="code">sha</span> and <span class="code">content</span>)</p>
+                <p>Action: <span class="code">Base64 Encode</span> to decode the contents with base64</p>
+                <p>Action: <span class="code">Combine Text</span> to combine the decoded contents and the dictionary
+                    from step 3 or 4</p>
+                <p>Action: <span class="code">Base64 Encode</span> to encode the combined contents with base64</p>
+                <p>6. <b>Upload backup File on GitHub</b></p>
+                <p>See Github api doc for parameters details.</p>
+                list ['due', 'schedule', 'start']
+                menu due
+                   Ask for Input -> Combine text -> menu [scheduled date,start]
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Input data format
+                </h3>
+                <p class="text-justify">The input is the results from the Shortcuts app. Each entry represents an
+                    activity with its details.</p>
+                <p class="text-justify">
+                    <span class="code">{"tp":"start","n":"Wake up","e":"wake up","tm":"2025-03-24
+                        08:50"}{"c":"Fantastic","tp":"end","tm":"2025-03-24 09:16"}</span>
+                </p>
+                <p class="text-justify"><span class="code">tp</span>(Type) - defines whether the entry marks the start
+                    or end of an activity</p>
+                <p class="text-justify"><span class="code">n</span>(Note) - A short description related to the
+                    activity(only present in "start" entries)</p>
+                <p class="text-justify"><span class="code">e</span>(Event) - The category of the activity</p>
+                <p class="text-justify"><span class="code">tm</span>(time) - The date and time of the activity in <span
+                        class="code">YYYY-MM-DD HH:mm</span> format</p>
+                <p class="text-justify"><span class="code">c</span>(Comment) - A rating of the activity (only present in
+                    "end" entries)</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Core function
+                </h3>
+                <p class="text-justify">
+                    calculate the position of the time block by finding the difference(in minutes) between the
+                    <b>timeline's start time</b> and the <b>activity's start time</b>. Divide this by the total duration
+                    of the timeline to get a percentage, then multiply it by the height of the timeline.
+                </p>
+                <p class="text-justify">If the end time goes past 12:00 AM(e.g., a timeline from 8:00 AM to 2:00 AM),
+                    calculate the time difference as follows: subtract the <b>timeline's end time</b>(in minutes) from
+                    the
+                    <b>total duration of the timeline</b>, then add <b>activity's start time</b>(in minutes).
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Show
+                </h3>
+                <img src="../../images/timeline.png" alt="sym" width="70%"
+                    style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
