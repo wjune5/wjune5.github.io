@@ -155,50 +155,11 @@
                 <h3>
                     Input data format
                 </h3>
-                <p class="text-justify">The input is the results from the Shortcuts app. Each entry represents an
-                    activity with its details.</p>
-                <p class="text-justify">
-                    <span class="code">{"tp":"start","n":"Wake up","e":"wake up","tm":"2025-03-24
-                        08:50"}{"c":"Fantastic","tp":"end","tm":"2025-03-24 09:16"}</span>
-                </p>
-                <p class="text-justify"><span class="code">tp</span>(Type) - defines whether the entry marks the start
-                    or end of an activity</p>
-                <p class="text-justify"><span class="code">n</span>(Note) - A short description related to the
-                    activity(only present in "start" entries)</p>
-                <p class="text-justify"><span class="code">e</span>(Event) - The category of the activity</p>
-                <p class="text-justify"><span class="code">tm</span>(time) - The date and time of the activity in <span
-                        class="code">YYYY-MM-DD HH:mm</span> format</p>
-                <p class="text-justify"><span class="code">c</span>(Comment) - A rating of the activity (only present in
-                    "end" entries)</p>
+                <p class="text-justify">Check the Task plugin</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Core function
-                </h3>
-                <p class="text-justify">
-                    calculate the position of the time block by finding the difference(in minutes) between the
-                    <b>timeline's start time</b> and the <b>activity's start time</b>. Divide this by the total duration
-                    of the timeline to get a percentage, then multiply it by the height of the timeline.
-                </p>
-                <p class="text-justify">If the end time goes past 12:00 AM(e.g., a timeline from 8:00 AM to 2:00 AM),
-                    calculate the time difference as follows: subtract the <b>timeline's end time</b>(in minutes) from
-                    the
-                    <b>total duration of the timeline</b>, then add <b>activity's start time</b>(in minutes).
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Show
-                </h3>
-                <img src="../../images/timeline.png" alt="sym" width="70%"
-                    style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
-            </div>
-        </div>
+     
         <br>
     </div>
 </body>
