@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Tasks</title>
+    <title>train</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,14 +46,13 @@
     <script src="../js/video_comparison.js"></script>
 </head>
 
-
 <body>
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>Tasks in Obsidian</b></br>
+                <b>Train models</b></br>
                 <small>
-                    Organize and track my time blocks, with different colors representing various activity categories
+                    Object detection
                 </small>
             </h2>
         </div>
@@ -66,84 +64,31 @@
                             Wenjun Fan
                         </a>
                     </li>
+                    <li>
+                        Hsiang-Wei Huang
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <span># Tasks</span>
-                <span># javascript</span>
+                <span># YOLOv11</span>
+                <span># Python</span>
+                <span># Colab</span>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Abstract
                 </h3>
-                <p>Easily record your tasks through shortcuts. This script is designed to be used together with the Task
-                    plugin.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Steps for Creating the Shortcut
-                </h3>
-                <p>1. <b>Choose from List</b></p>
-                <p>Define a <span class="code">List</span>. The list items are <span class="code">start</span> and <span
-                        class="code">end</span></p>
-                <p>Action: <span class="code">Choose from List</span></p>
-                <p>2. <b>Use If to check different activity type</b></p>
-                <p>Action: <span class="code">If</span> the variable value is "start", got to step 3, otherwise step 4
+                <p class="text-justify">
+                    
                 </p>
-                <p>3. <b>Choose from Menu</b></p>
-                <p>Action: <span class="code">Choose from Menu</span></p>
-                <p>Add my first-level category of activities. Then define a <span class="code">Dictionary</span> in each
-                    options, and add specific categories. Action: <span class="code">Choose from List</span>(Variable is
-                    Dictionary)</p>
-                When it reaches the end menu, use Action: <span class="code">Ask for input</span> to get some notes from
-                users. Define a <span class="code">Dictionary</span> to store the menu results, current time, activity
-                type(result of step 1), and notes.
-                <p>4. <b>End the activity</b></p>
-                <p>Define a <span class="code">List</span> to get the comments or rating of this activity. The list
-                    items can be the comments or feelings.</p>
-                <p>Action: <span class="code">Choose from List</span></p>
-                <p>Define a <span class="code">Dictionary</span> to store current time, activity type(result of step 1),
-                    and comments.</p>
-
-                Encode to JSON
-
-                Use "Encode to JSON" to convert the dictionary into JSON.
-
-                <p>5. <b>Get backup File on GitHub</b></p>
-                <p>Action: <span class="code">Get Contents from URL</span></p>
-                See Github api doc for parameters details.
-                <p>Action: <span class="code">Get Dictionary Value</span> to get the results of Github api in Json(get
-                    <span class="code">sha</span> and <span class="code">content</span>)
-                </p>
-                <p>Action: <span class="code">Base64 Encode</span> to decode the contents with base64</p>
-                <p>Action: <span class="code">Combine Text</span> to combine the decoded contents and the dictionary
-                    from step 3 or 4</p>
-                <p>Action: <span class="code">Base64 Encode</span> to encode the combined contents with base64</p>
-                <p>6. <b>Upload backup File on GitHub</b></p>
-                <p>See Github api doc for parameters details.</p>
-                list ['due', 'schedule', 'start']
-                menu due
-                Ask for Input -> Combine text -> menu [scheduled date,start]
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Input data format
-                </h3>
-                <p class="text-justify">Check the Task plugin</p>
-            </div>
-        </div>
-
-     
-        <br>
     </div>
 </body>
 
